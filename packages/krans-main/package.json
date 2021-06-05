@@ -1,0 +1,45 @@
+{
+    "name": "@geislabs/geis",
+    "version": "0.0.62",
+    "description": "> TODO: description",
+    "author": "mads hargreave <mads.hargreave@gmail.com>",
+    "homepage": "",
+    "repository": "git://github.com/geislabs/geis.git",
+    "license": "ISC",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "directories": {
+        "dist": "dist"
+    },
+    "files": [
+        "dist"
+    ],
+    "publishConfig": {
+        "registry": "http://registry.npmjs.org/",
+        "access": "public"
+    },
+    "scripts": {
+        "clean": "rimraf dist",
+        "build": "npm run clean && rollup --config rollup.config.js",
+        "watch": "npm run clean && rollup --config rollup.config.js --watch"
+    },
+    "dependencies": {
+        "@geislabs/fetch": "^0.0.60",
+        "@geislabs/fetch-plugin": "^0.0.60",
+        "@geislabs/http": "^0.0.78",
+        "@geislabs/http-proxy": "^0.0.78",
+        "@geislabs/json": "^0.0.54",
+        "@geislabs/json-fetch": "^0.0.54",
+        "@geislabs/html": "^0.0.63",
+        "@geislabs/html-fetch": "^0.0.63",
+        "@geislabs/plugin": "^0.0.2",
+        "@geislabs/protocol": "^0.0.48",
+        "@geislabs/runner": "^0.0.24",
+        "@geislabs/runtime": "^0.0.78",
+        "ix": "^4.3.1"
+    },
+    "devDependencies": {
+        "@rollup/plugin-json": "^4.1.0",
+        "rimraf": "^3.0.2"
+    }
+}

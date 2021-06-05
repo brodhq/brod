@@ -1,0 +1,22 @@
+{
+    "private": true,
+    "name": "@kransio/krans-e2e",
+    "version": "0.0.62",
+    "description": "> TODO: description",
+    "author": "mads hargreave <mads.hargreave@gmail.com>",
+    "homepage": "",
+    "repository": "git://github.com/kransio/krans.git",
+    "license": "ISC",
+    "directories": {
+        "test": "test"
+    },
+    "files": [],
+    "publishConfig": {
+        "registry": "http://registry.npmjs.org/",
+        "access": "public"
+    },
+    "scripts": {},
+    "devDependencies": {
+        "krans/geis": "^0.0.62"
+    }
+}

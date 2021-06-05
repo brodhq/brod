@@ -20,8 +20,8 @@
     },
     "scripts": {
         "clean": "rimraf dist",
-        "build": "npm run clean && rollup --config rollup.config.js",
-        "watch": "npm run clean && rollup --config rollup.config.js --watch"
+        "build": "npm run clean && tsc",
+        "watch": "npm run clean && tsc -w"
     },
     "devDependencies": {
         "rimraf": "^3.0.2"

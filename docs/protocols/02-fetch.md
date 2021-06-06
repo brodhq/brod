@@ -4,7 +4,7 @@ title: Fetch
 slug: fetch
 ---
 
-### Fetch
+## Overview
 
 The fetch protocol is designed for fetching and parsing unstructured data over HTTP.
 

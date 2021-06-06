@@ -15,7 +15,7 @@ const response = fetch(url, resp =>
 )
 ```
 
-### `fetch([type?, url, init[]?, callback?])`
+### fetch([type?, url, init[]?, callback?])
 
 Send a request
 
@@ -31,13 +31,13 @@ The fetch options control the behavior of the fetch object. Note that the option
 
 All options are optionals.
 
-#### `fetch.method([method])`
+#### fetch.method([method])
 
 Set the HTTP method.
 
 Default value: `'GET'`.
 
-#### `fetch.header([name, value])`
+#### fetch.header([name, value])
 
 Set a HTTP header.
 
@@ -48,6 +48,8 @@ Example usage of the fetch protocol
 
 #### Simple
 
+A simple request
+
 ```typescript
 import { fetch, Json } from 'krans'
 
@@ -56,6 +58,8 @@ const response = await fetch(Json, url)
 ```
 
 #### Data extraction
+
+Extract properties from JSON payload
 
 ```typescript
 import { fetch, Json } from 'krans'
@@ -69,6 +73,8 @@ const response = await fetch(Json, url, ({ data }) => ({
 ```
 
 #### Custom headers
+
+Set request custom headers
 
 ```typescript
 import { fetch, Json } from 'krans'

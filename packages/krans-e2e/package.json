@@ -1,7 +1,7 @@
 {
     "private": true,
     "name": "@kransio/krans-e2e",
-    "version": "0.0.9",
+    "version": "0.0.10",
     "description": "> TODO: description",
     "author": "mads hargreave <mads.hargreave@gmail.com>",
     "homepage": "",
@@ -17,6 +17,6 @@
     },
     "scripts": {},
     "devDependencies": {
-        "krans": "^0.0.9"
+        "krans": "^0.0.10"
     }
 }

@@ -35,55 +35,41 @@ All options are optionals.
 
 Set the HTTP method.
 
+##### Example
+
+```typescript
+await fetch(
+  'https://jsonplaceholder.typicode.com/todos/1',
+  fetch.method('post')
+)
+```
+
+#### fetch.body([payload])
+
+Set the HTTP body of the request.
+
+##### Example
+
+```typescript
+await fetch(
+  'https://jsonplaceholder.typicode.com/todos/1',
+  fetch.body({
+    data: true
+  })
+)
+```
+
 Default value: `'GET'`.
 
 #### fetch.header([name, value])
 
 Set a HTTP header.
 
-
-### Examples
-
-Example usage of the fetch protocol
-
-#### Simple
-
-A simple request
+##### Example
 
 ```typescript
-import { fetch, Json } from 'krans'
-
-const url = 'https://jsonplaceholder.typicode.com/todos/1'
-const response = await fetch(Json, url)
-```
-
-#### Data extraction
-
-Extract properties from JSON payload
-
-```typescript
-import { fetch, Json } from 'krans'
-
-const url = 'https://jsonplaceholder.typicode.com/todos/1'
-const response = await fetch(Json, url, ({ data }) => ({
-  id: data['id'].toInteger(),
-  title: data['title'].toString(),
-  body: data['body'].toString()
-}))
-```
-
-#### Custom headers
-
-Set request custom headers
-
-```typescript
-import { fetch, Json } from 'krans'
-
-const url = 'https://jsonplaceholder.typicode.com/todos/1'
-const response = await fetch(
-  Json, 
-  url,
-  fetch.header('a header', 'my-applicatin'),
-  fetch.header('another header', 'my-applicatin')
+await fetch(
+  'https://jsonplaceholder.typicode.com/todos/1',
+  fetch.header('Authorization', 'my token')
 )
 ```

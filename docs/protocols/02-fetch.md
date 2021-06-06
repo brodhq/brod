@@ -8,18 +8,22 @@ slug: fetch
 
 The fetch protocol is designed for fetching and parsing unstructured data over HTTP.
 
-### `fetch([type?, url, init?, callback?])`
-
-Creates a new fetch object where:
-
-- `options` - (optional) a [fetch configuration object](#fetch.options).
-
 ```typescript
 const url = 'https://jsonplaceholder.typicode.com/todos/1'
 const response = fetch(url, resp => 
   console.log(resp)
 )
 ```
+
+### `fetch([type?, url, init[]?, callback?])`
+
+Send a request
+
+- `type` - Set the expected response data type 
+- `url` - HTTP URL of remote resource
+- `init` - A list of fetch configurations
+- `callback` - (optional) an optional callback receiving the response
+
 
 ### Fetch options
 
@@ -36,3 +40,44 @@ Default value: `'GET'`.
 #### `fetch.header([name, value])`
 
 Set a HTTP header.
+
+
+### Examples
+
+Example usage of the fetch protocol
+
+#### Simple
+
+```typescript
+import { fetch, Json } from 'krans'
+
+const url = 'https://jsonplaceholder.typicode.com/todos/1'
+const response = await fetch(Json, url)
+```
+
+#### Data extraction
+
+```typescript
+import { fetch, Json } from 'krans'
+
+const url = 'https://jsonplaceholder.typicode.com/todos/1'
+const response = await fetch(Json, url, ({ data }) => ({
+  id: data['id'].toInteger(),
+  title: data['title'].toString(),
+  body: data['body'].toString()
+}))
+```
+
+#### Custom headers
+
+```typescript
+import { fetch, Json } from 'krans'
+
+const url = 'https://jsonplaceholder.typicode.com/todos/1'
+const response = await fetch(
+  Json, 
+  url,
+  fetch.header('a header', 'my-applicatin'),
+  fetch.header('another header', 'my-applicatin')
+)
+```

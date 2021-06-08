@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@krans/krans">
-    <img alt="Hex Version" src="https://img.shields.io/npm/v/@krans/krans.svg">
+  <a href="https://www.npmjs.com/package/krans">
+    <img alt="Hex Version" src="https://img.shields.io/npm/v/krans.svg">
   </a>
   <a href="https://github.com/kransio/krans/actions">
     <img alt="CI Status" src="https://github.com/kransio/krans/workflows/ci/badge.svg">

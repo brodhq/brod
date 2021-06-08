@@ -1,8 +1,8 @@
 /**
  * @file Send a HTTP request
  */
-import { fetch } from '../../'
+import { fetch } from '..'
 
 const response = fetch('google.com', ({ data }) => ({
-    title: 1,
+    title: data['title'].toString(),
 })).then(console.log)

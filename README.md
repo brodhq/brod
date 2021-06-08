@@ -28,4 +28,6 @@
 | Package | Version | Dependencies |
 |--------|-------|------------|
 | [`@krans/json`](https://github.com/kransio/json) | [![npm](https://img.shields.io/npm/v/@krans/json.svg?maxAge=3600)](https://www.npmjs.com/package/@babel/core) | [![Dependency Status](https://david-dm.org/babel/babel.svg?path=packages/babel-core)](https://david-dm.org/babel/babel?path=packages/babel-core) |
-| [`@krans/json`](https://github.com/kransio/html) | [![npm](https://img.shields.io/npm/v/@krans/html.svg?maxAge=3600)](https://www.npmjs.com/package/@babel/parser) | [![Dependency Status](https://david-dm.org/babel/babel.svg?path=packages/babel-parser)](https://david-dm.org/babel/babel?path=packages/babel-parser) |
+| [`@krans/html`](https://github.com/kransio/html) | [![npm](https://img.shields.io/npm/v/@krans/html.svg?maxAge=3600)](https://www.npmjs.com/package/@babel/parser) | [![Dependency Status](https://david-dm.org/babel/babel.svg?path=packages/babel-parser)](https://david-dm.org/babel/babel?path=packages/babel-parser) |
+
+<br/>

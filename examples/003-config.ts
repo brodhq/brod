@@ -7,11 +7,7 @@ import { http } from '@krans/http'
 
 export default {
     input: 'src/main',
-    output: [
-        {
-            file: 'output.json',
-        },
-    ],
+    output: [File(Json, 'my-file.json')],
     plugins: [http()],
 }
 

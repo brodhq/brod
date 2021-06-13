@@ -17,6 +17,6 @@
     },
     "scripts": {},
     "devDependencies": {
-        "verker": "^0.0.24"
+        "pansar": "^0.0.24"
     }
 }

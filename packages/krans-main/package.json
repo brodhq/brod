@@ -4,7 +4,7 @@
     "description": "> TODO: description",
     "author": "mads hargreave <mads.hargreave@gmail.com>",
     "homepage": "",
-    "repository": "git://github.com/kransio/krans.git",
+    "repository": "git://github.com/pansarhq/krans.git",
     "license": "ISC",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",

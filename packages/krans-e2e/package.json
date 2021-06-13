@@ -17,6 +17,6 @@
     },
     "scripts": {},
     "devDependencies": {
-        "krans": "^0.0.22"
+        "verker": "^0.0.23"
     }
 }

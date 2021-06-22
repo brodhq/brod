@@ -1,11 +1,11 @@
 {
     "private": true,
-    "name": "@pansarhq/krans-e2e",
+    "name": "@brodhq/krans-e2e",
     "version": "0.0.28",
     "description": "> TODO: description",
     "author": "mads hargreave <mads.hargreave@gmail.com>",
     "homepage": "",
-    "repository": "git://github.com/pansarhq/krans.git",
+    "repository": "git://github.com/brodhq/krans.git",
     "license": "ISC",
     "directories": {
         "test": "test"

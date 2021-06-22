@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://pansar.io">
-    <img alt="pansar" src="https://raw.githubusercontent.com/pansarhq/assets/master/icons/png/icon-header-repository.png" height="64" width='auto'>
+  <a href="https://brod.sh">
+    <img alt="brod" src="https://raw.githubusercontent.com/brodhq/assets/master/icons/png/icon-header-repository.png" height="64" width='auto'>
   </a>
 </p>
 
@@ -10,17 +10,17 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/pansar">
-    <img alt="Hex Version" src="https://img.shields.io/npm/v/pansar.svg">
+  <a href="https://www.npmjs.com/package/brod">
+    <img alt="Hex Version" src="https://img.shields.io/npm/v/brod.svg">
   </a>
-  <a href="https://github.com/pansarhq/pansar/actions">
-    <img alt="CI Status" src="https://github.com/pansarhq/pansar/workflows/ci/badge.svg">
+  <a href="https://github.com/brodhq/brod/actions">
+    <img alt="CI Status" src="https://github.com/brodhq/brod/workflows/ci/badge.svg">
   </a>
   <a href="https://opensource.org/licenses/Apache-2.0">
-    <img alt="Apache 2 License" src="https://img.shields.io/npm/l/pansar">
+    <img alt="Apache 2 License" src="https://img.shields.io/npm/l/brod">
   </a>
-  <a href="https://codecov.io/gh/pansarhq/pansar">
-    <img src="https://codecov.io/gh/pansarhq/pansar/branch/master/graph/badge.svg?token=CYpB9H2ah3"/>
+  <a href="https://codecov.io/gh/brodhq/brod">
+    <img src="https://codecov.io/gh/brodhq/brod/branch/master/graph/badge.svg?token=CYpB9H2ah3"/>
   </a>
 </p>
 
@@ -28,7 +28,7 @@
 
 | Package | Version | Dependencies |
 |--------|-------|------------|
-| [`@pansar/json`](https://github.com/pansarhq/json) | [![npm](https://img.shields.io/npm/v/@pansar/json.svg?maxAge=3600)](https://www.npmjs.com/package/@pansar/json) | [![Dependency Status](https://david-dm.org/babel/babel.svg?path=packages/babel-core)](https://david-dm.org/babel/babel?path=packages/babel-core) |
-| [`@pansar/html`](https://github.com/pansarhq/html) | [![npm](https://img.shields.io/npm/v/@pansar/html.svg?maxAge=3600)](https://www.npmjs.com/package/@pansar/html) | [![Dependency Status](https://david-dm.org/babel/babel.svg?path=packages/babel-parser)](https://david-dm.org/babel/babel?path=packages/babel-parser) |
+| [`@brod/json`](https://github.com/brodhq/json) | [![npm](https://img.shields.io/npm/v/@brod/json.svg?maxAge=3600)](https://www.npmjs.com/package/@brod/json) | [![Dependency Status](https://david-dm.org/babel/babel.svg?path=packages/babel-core)](https://david-dm.org/babel/babel?path=packages/babel-core) |
+| [`@brod/html`](https://github.com/brodhq/html) | [![npm](https://img.shields.io/npm/v/@brod/html.svg?maxAge=3600)](https://www.npmjs.com/package/@brod/html) | [![Dependency Status](https://david-dm.org/babel/babel.svg?path=packages/babel-parser)](https://david-dm.org/babel/babel?path=packages/babel-parser) |
 
 <br/>

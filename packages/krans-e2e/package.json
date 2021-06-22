@@ -17,6 +17,6 @@
     },
     "scripts": {},
     "devDependencies": {
-        "pansar": "^0.0.25"
+        "brod": "^0.0.25"
     }
 }

@@ -10,10 +10,11 @@
         "release:patch": "git add -A && git commit -am \"released\" --allow-empty && lerna version patch --yes --force-publish",
         "test:coverage": "jest --collect-coverage",
         "test": "jest",
-        "test:unit": "jest --testPathIgnorePatterns --passWithNoTests packages/krans-e2e",
-        "test:e2e": "jest \"packages/krans-e2e\" --passWithNoTests",
+        "test:unit": "jest --testPathIgnorePatterns --passWithNoTests packages/brod-e2e",
+        "test:e2e": "jest \"packages/brod-e2e\" --passWithNoTests",
         "watch": "jest --watch",
-        "watch:e2e": "jest \"packages/krans-e2e\" --watch",
+        "watch:e2e": "jest \"packages/brod-e2e\" --watch",
+        "watch:project": "jest \"packages/brod-project\" --watch",
         "prepare": "husky install"
     },
     "devDependencies": {

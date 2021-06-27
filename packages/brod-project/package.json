@@ -1,0 +1,29 @@
+{
+    "name": "@brod/project",
+    "version": "0.0.28",
+    "description": "> TODO: description",
+    "author": "mads hargreave <mads.hargreave@gmail.com>",
+    "homepage": "",
+    "repository": "git://github.com/brodhq/krans.git",
+    "license": "ISC",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "directories": {
+        "dist": "dist"
+    },
+    "files": [
+        "dist"
+    ],
+    "publishConfig": {
+        "registry": "http://registry.npmjs.org/",
+        "access": "public"
+    },
+    "scripts": {
+        "clean": "rimraf dist",
+        "build": "npm run clean && tsc",
+        "watch": "npm run clean && tsc -w"
+    },
+    "devDependencies": {
+        "rimraf": "^3.0.2"
+    }
+}

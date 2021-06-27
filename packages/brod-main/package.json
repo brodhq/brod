@@ -8,7 +8,7 @@
     "license": "ISC",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
-    "bin": "./node_modules/@krans/cli/bin/run",
+    "bin": "./node_modules/.bin/brod",
     "directories": {
         "dist": "dist"
     },

@@ -23,8 +23,10 @@
         "build": "npm run clean && tsc",
         "watch": "npm run clean && tsc -w"
     },
+    "dependencies": {
+        "@krans/cli": "^0.0.3"
+    },
     "devDependencies": {
-        "@krans/cli": "^0.0.3",
         "rimraf": "^3.0.2"
     }
 }

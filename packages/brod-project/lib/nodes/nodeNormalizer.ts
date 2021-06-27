@@ -10,20 +10,22 @@ export function normalize(
 ): CreateNodeAttrs {
     const filename = path.basename(config.input)
     const extension = path.extname(filename)
-    const loader = fetchLoader(context, extension)
+    const selected = fetchLoader(context, extension)
     const raw = fetchFile(context.file, filename)
-    const { source, depends } = loader.fn(raw.content)
+    const { register, depends } = selected.loader(raw.content)
     return {
-        nodeName: filename.replace(/\..+$/g, ''),
-        source,
+        nodeName: config.nodeName ?? filename.replace(/\..+$/g, ''),
+        // @ts-expect-error
+        source: register(null, null),
         depends,
     }
 }
 
 function fetchLoader(context: NodeContext, extension: string) {
-    const loader = context.loaders.find(
-        (loader) => loader.extension === extension
-    )
+    const loader = context.loaders
+        .slice()
+        .reverse()
+        .find((candidate) => candidate.test.test(extension))
     if (!loader) {
         throw new Error(`loader '${extension}' not found`)
     }

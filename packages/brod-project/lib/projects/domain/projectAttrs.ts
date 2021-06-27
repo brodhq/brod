@@ -1,5 +1,7 @@
+import { ProjectModuleRule } from '../../modules'
 import { CreateNodeAttrs } from '../../nodes'
 
 export interface CreateProjectAttrs {
-    nodes?: CreateNodeAttrs[]
+    tasks?: CreateNodeAttrs[]
+    rules?: ProjectModuleRule[]
 }

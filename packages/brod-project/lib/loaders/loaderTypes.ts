@@ -1,8 +1,4 @@
-import { Node } from '../nodes'
+import { Loader } from '@krans/loader-core'
 
-export type LoaderFn = (raw: string) => Pick<Node, 'source' | 'depends'>
-
-export interface Loader {
-    extension: string
-    fn: LoaderFn
-}
+export type ResolvableLoader = string
+export type ProjectLoader = Loader | ResolvableLoader

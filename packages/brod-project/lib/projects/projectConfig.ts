@@ -1,7 +1,7 @@
-export interface ProjectSingleConfig {
-    input: string
+import { ProjectEntryMap } from '../entries'
+import { ProjectModule } from '../modules'
+
+export interface ProjectConfig {
+    entry: ProjectEntryMap
+    module: ProjectModule
 }
-
-export type ProjectMultiConfig = ProjectSingleConfig[]
-
-export type ProjectConfig = ProjectSingleConfig | ProjectMultiConfig

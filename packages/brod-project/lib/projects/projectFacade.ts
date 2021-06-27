@@ -11,9 +11,13 @@ import { Project, project } from './domain'
  */
 export function createProject(
     context: ProjectContext,
-    config: ProjectConfig = []
+    {
+        entry = {},
+        module = { rules: [] },
+        ...config
+    }: Partial<ProjectConfig> = {}
 ): Project {
-    const attrs = normalize(context, config)
+    const attrs = normalize(context, { entry, module, ...config })
     const instance = project(attrs)
     return instance
 }

@@ -1,5 +1,7 @@
+import { ProjectModuleRule } from '../../modules'
 import { Node } from '../../nodes'
 
 export interface Project {
-    nodes: Node[]
+    tasks: Node[]
+    rules: ProjectModuleRule[]
 }

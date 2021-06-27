@@ -8,13 +8,13 @@ export function normalize(
     config: ProjectConfig
 ): CreateProjectAttrs {
     const bound = nodes.create.bind(null, context)
-    if (Array.isArray(config)) {
-        return {
-            nodes: config.map(bound),
-        }
-    } else {
-        return {
-            nodes: [bound(config)],
-        }
+    return {
+        tasks: Object.entries(config.entry).map(([nodeName, entry]) =>
+            bound({
+                nodeName,
+                input: entry.path,
+            })
+        ),
+        rules: config.module.rules,
     }
 }

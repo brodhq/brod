@@ -1,10 +1,10 @@
 {
     "name": "@krans/project",
-    "version": "0.0.31",
+    "version": "0.0.32",
     "description": "> TODO: description",
     "author": "mads hargreave <mads.hargreave@gmail.com>",
     "homepage": "",
-    "repository": "git://github.com/brodhq/krans.git",
+    "repository": "git://github.com/brodhq/brod.git",
     "license": "ISC",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",

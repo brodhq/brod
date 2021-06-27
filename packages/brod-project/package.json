@@ -1,6 +1,6 @@
 {
     "name": "@krans/project",
-    "version": "0.0.38",
+    "version": "0.0.39",
     "description": "> TODO: description",
     "author": "mads hargreave <mads.hargreave@gmail.com>",
     "homepage": "",
@@ -24,8 +24,8 @@
         "watch": "npm run clean && tsc -w"
     },
     "dependencies": {
-        "@krans/loader-core": "^0.0.4",
         "@krans/loader-babel": "^0.0.4",
+        "@krans/loader-core": "^0.0.4",
         "@krans/loader-plugin": "^0.0.4"
     },
     "devDependencies": {

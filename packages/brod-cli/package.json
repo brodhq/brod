@@ -1,6 +1,6 @@
 {
     "name": "brod",
-    "version": "0.0.39",
+    "version": "0.0.40",
     "author": "mads hargreave @madshargreave",
     "bin": {
         "brod": "./bin/run"
@@ -59,11 +59,11 @@
     },
     "types": "dist/index.d.ts",
     "dependencies": {
+        "@krans/project": "^0.0.8",
+        "@krans/runner": "^0.0.29",
         "@oclif/command": "^1.8.0",
         "@oclif/config": "^1.17.0",
         "@oclif/plugin-help": "^3.2.2",
-        "tslib": "^1.14.1",
-        "@krans/project": "^0.0.8",
-        "@krans/runner": "^0.0.29"
+        "tslib": "^1.14.1"
     }
 }

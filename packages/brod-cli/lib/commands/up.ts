@@ -3,7 +3,7 @@ import { load } from '@krans/project'
 
 const loader = load.bind(null, {})
 
-export default class Hello extends Command {
+export default class Up extends Command {
     static description = 'describe the command here'
 
     static examples = [
@@ -23,7 +23,7 @@ up world from ./src/up.ts!
     static args = [{ name: 'file' }]
 
     async run() {
-        const { args, flags } = this.parse(Hello)
+        const { args, flags } = this.parse(Up)
         const project = await loader()
         const name = flags.name ?? 'world'
         this.log(`up ${name} from ./src/commands/up.ts!`)

@@ -1,6 +1,6 @@
 {
     "name": "brod",
-    "version": "0.0.44",
+    "version": "0.0.43",
     "author": "mads hargreave @madshargreave",
     "bin": {
         "brod": "./bin/run"
@@ -42,6 +42,16 @@
     ],
     "license": "MIT",
     "main": "dist/index.js",
+    "scripts": {
+        "postpack": "rm -f oclif.manifest.json",
+        "posttest": "eslint . --ext .ts --config .eslintrc",
+        "prepack": "rm -rf dist && tsc -b && oclif-dev manifest && oclif-dev readme",
+        "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
+        "version": "oclif-dev readme && git add README.md",
+        "clean": "rimraf dist",
+        "build": "tsc",
+        "watch": "tsc --watch"
+    },
     "oclif": {
         "commands": "./dist/commands",
         "bin": "brod",

@@ -1,6 +1,6 @@
 {
     "name": "brod",
-    "version": "0.0.42",
+    "version": "0.0.43",
     "author": "mads hargreave @madshargreave",
     "bin": {
         "brod": "./bin/run"

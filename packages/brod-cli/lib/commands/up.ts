@@ -1,7 +1,22 @@
 import { Command, flags } from '@oclif/command'
 import { load } from '@krans/project'
+import fs from 'fs'
+import path from 'path'
 
-const loader = load.bind(null, {})
+const loader = load.bind(null, {
+    file: {
+        findOne(filepath) {
+            const absolute = path.resolve(process.cwd(), filepath)
+            try {
+                const content = fs.readFileSync(absolute).toString('utf-8')
+                return { content: content }
+            } catch {
+                console.warn(`file ${absolute} not found`)
+                return null
+            }
+        },
+    },
+})
 
 export default class Up extends Command {
     static description = 'describe the command here'

@@ -1,5 +1,6 @@
 import { Command, flags } from '@oclif/command'
 import { load } from '@krans/project'
+import { run } from '@krans/runner'
 import fs from 'fs'
 import path from 'path'
 
@@ -40,8 +41,9 @@ up world from ./src/up.ts!
     async run() {
         const { args, flags } = this.parse(Up)
         const project = await loader()
-        const name = flags.name ?? 'world'
-        this.log(`up ${name} from ./src/commands/up.ts!`)
-        this.log(JSON.stringify(project))
+        const source = run(project)
+        for await (const record of source) {
+            console.log(record)
+        }
     }
 }

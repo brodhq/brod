@@ -1,11 +1,14 @@
 import { Command, flags } from '@oclif/command'
+import { load } from '@krans/project'
+
+const loader = load.bind(null, {})
 
 export default class Hello extends Command {
     static description = 'describe the command here'
 
     static examples = [
-        `$ brod hello
-hello world from ./src/hello.ts!
+        `$ brod up
+up world from ./src/up.ts!
 `,
     ]
 
@@ -21,11 +24,9 @@ hello world from ./src/hello.ts!
 
     async run() {
         const { args, flags } = this.parse(Hello)
-
+        const project = await loader()
         const name = flags.name ?? 'world'
-        this.log(`hello ${name} from ./src/commands/hello.ts!`)
-        if (args.file && flags.force) {
-            this.log(`you input --force and --file: ${args.file}`)
-        }
+        this.log(`up ${name} from ./src/commands/up.ts!`)
+        this.log(JSON.stringify(project))
     }
 }

@@ -2,12 +2,12 @@ import { Command, flags } from '@oclif/command'
 import { run } from '@krans/runner'
 import { loader } from '../cliContainer'
 
-export default class Up extends Command {
+export default class Run extends Command {
     static description = 'describe the command here'
 
     static examples = [
-        `$ brod up
-up world from ./src/up.ts!
+        `$ brod run
+run world from ./src/run.ts!
 `,
     ]
 
@@ -22,7 +22,7 @@ up world from ./src/up.ts!
     static args = [{ name: 'file' }]
 
     async run() {
-        const { args, flags } = this.parse(Up)
+        const { args, flags } = this.parse(Run)
         const project = await loader()
         const source = run(project)
         for await (const record of source) {

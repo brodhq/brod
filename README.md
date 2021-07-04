@@ -24,11 +24,19 @@
   </a>
 </p>
 
+### Protocols
+
+| Package | Version | Dependencies |
+|--------|-------|------------|
+| [`@brod/fetch`](https://github.com/brodhq/fetch) | [![npm](https://img.shields.io/npm/v/@brod/fetch.svg?maxAge=3600)](https://www.npmjs.com/package/@brod/fetch) | [![Dependency Status](https://status.david-dm.org/gh/brodhq/fetch.svg?path=packages%2Ffetch-main)](https://status.david-dm.org/gh/brodhq/fetch.svg?path=packages/fetch-main) |
+
+<br/>
+
 ### Data Types
 
 | Package | Version | Dependencies |
 |--------|-------|------------|
-| [`@brod/json`](https://github.com/brodhq/json) | [![npm](https://img.shields.io/npm/v/@brod/json.svg?maxAge=3600)](https://www.npmjs.com/package/@brod/json) | [![Dependency Status](https://david-dm.org/babel/babel.svg?path=packages/babel-core)](https://david-dm.org/babel/babel?path=packages/babel-core) |
-| [`@brod/html`](https://github.com/brodhq/html) | [![npm](https://img.shields.io/npm/v/@brod/html.svg?maxAge=3600)](https://www.npmjs.com/package/@brod/html) | [![Dependency Status](https://david-dm.org/babel/babel.svg?path=packages/babel-parser)](https://david-dm.org/babel/babel?path=packages/babel-parser) |
+| [`@brod/json`](https://github.com/brodhq/json) | [![npm](https://img.shields.io/npm/v/@brod/json.svg?maxAge=3600)](https://www.npmjs.com/package/@brod/json) | [![Dependency Status](https://status.david-dm.org/gh/brodhq/json.svg?path=packages%2Fjson-main)](https://status.david-dm.org/gh/brodhq/json.svg?path=packages/json-main) |
+| [`@brod/html`](https://github.com/brodhq/html) | [![npm](https://img.shields.io/npm/v/@brod/html.svg?maxAge=3600)](https://www.npmjs.com/package/@brod/html) | [![Dependency Status](https://status.david-dm.org/gh/brodhq/html.svg?path=packages%2Fhtml-main)](https://status.david-dm.org/gh/brodhq/html.svg?path=packages/html-main) |
 
 <br/>
